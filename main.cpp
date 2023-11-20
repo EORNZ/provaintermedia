@@ -9,7 +9,9 @@ int main() {
     mybook.prendi();
 
     BookShelf shelf;
+
     shelf.push_back(mybook);
+    shelf.reserve(3);
     cout<< shelf <<endl;
 
     return 0;

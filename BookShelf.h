@@ -3,7 +3,6 @@
 #include <iostream>
 #include <initializer_list>
 #include "Book.h"
-using namespace std;
 
 class BookShelf{
 private:
@@ -15,7 +14,7 @@ public:
     BookShelf();
     BookShelf(int);
     BookShelf(const BookShelf&);
-    BookShelf(initializer_list<Book>);
+    BookShelf(std::initializer_list<Book>);
     ~BookShelf();
     BookShelf operator=(const BookShelf&);
     Book operator[](int) const;

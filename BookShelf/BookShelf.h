@@ -3,7 +3,6 @@
 #include <iostream>
 #include <initializer_list>
 #include "Book.h"
-using namespace std;
 
 class BookShelf{
 private:
@@ -12,9 +11,10 @@ private:
     int buffer_size;
 
 public:
+    BookShelf();
     BookShelf(int);
     BookShelf(const BookShelf&);
-    BookShelf(initializer_list<Book>);
+    BookShelf(std::initializer_list<Book>);
     ~BookShelf();
     BookShelf operator=(const BookShelf&);
     Book operator[](int) const;
@@ -23,9 +23,14 @@ public:
     int get_buffer_size() const;
     Book& at(int);
     Book at(int) const;
-    void push_back(Book);
+    void set_at(int, Book);
+    void set_at(int, Book) const;
+    void push_back(const Book);
     Book pop_back();
     void reserve(int);
+    std::string toString() const;
+    bool is_valid(int index) const;
+    bool is_empty();
 };
 
 std::ostream& operator<<(std::ostream&, const BookShelf&);

@@ -13,8 +13,10 @@ private:
     bool stato; //true se disponibile, false se in prestito
 
 public:
+    Book();
     Book(std::string, std::string, std::string, std::string);
     Book(std::string, std::string, std::string, std::string, Date);
+    Book(std::string, std::string, std::string, std::string, int, int, int);
     Book(const Book&);
     //Book();
     std::string getIsbn() const;
