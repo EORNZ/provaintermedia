@@ -18,10 +18,10 @@ Date::Date(int gg, int mm, int aaaa) {
             this->mese = mm;
             this->anno = aaaa;
         }
-    }else{
+    }
+    else{
         throw InvalidDate();
     }
-
 }
 
 
@@ -42,9 +42,9 @@ bool Date::operator!=(const Date &d) const {
 }
 
 bool Date::operator<(const Date &d) const {
-    if (anno < d.anno)
+    if (this->anno < d.anno)
         return true;
-    else if (anno > d.anno)
+    else if (this->anno > d.anno)
         return false;
 
     if (mese < d.mese)
@@ -58,12 +58,13 @@ bool Date::operator<(const Date &d) const {
 bool Date::operator>(const Date &d) const {
     return !(*this < d);
 }
+
 //ausiliari
 int Date::getGiorno() {
     return giorno;
 }
 int Date::getMese() {
-    return  mese;
+    return mese;
 }
 int Date::getAnno() {
     return anno;
