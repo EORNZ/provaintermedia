@@ -1,0 +1,9 @@
+# ninja log v5
+3	388	7222077166623105	CMakeFiles/Progetto.dir/main.cpp.obj	e6cc1860a3a7735a
+369	451	7222077530076117	Progetto.exe	5295f15a2303c042
+1	143	7222191023601545	build.ninja	56cb7709edfbb7f1
+1	376	7222191275436320	CMakeFiles/Progetto.dir/main.cpp.obj	66e3274ef5e239d2
+4	389	7222192063359176	CMakeFiles/Progetto.dir/src/Date.cpp.obj	56b745b25f08c17c
+8	414	7222192063613217	CMakeFiles/Progetto.dir/src/Book.cpp.obj	1b45b3bee23aa3b4
+13	439	7222192063875795	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	a6f94d5dce7545ce
+439	558	7222192065008245	Progetto.exe	613b7b007374b87
