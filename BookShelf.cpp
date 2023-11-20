@@ -165,7 +165,6 @@ bool BookShelf::is_empty()
     return size != 0;
 }
 
-
 std::ostream& operator<<(std::ostream& os, const BookShelf& b){
     std::string s;
     for (int i = 0; i < b.get_size(); i++) {
