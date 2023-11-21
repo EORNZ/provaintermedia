@@ -14,12 +14,10 @@ BookShelf::BookShelf(int dim){
     if(dim<=0){
         throw Invalid();
     }
-    size = dim;
+    size = 0;
     buffer_size = dim;
     elem = new Book[dim];
-    for(int i=0;i<dim;i++){
-        elem[i]=Book();
-    }
+
 }
 
 BookShelf::BookShelf(const BookShelf& m){
