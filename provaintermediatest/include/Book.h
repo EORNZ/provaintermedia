@@ -18,6 +18,7 @@ public:
     Book(std::string, std::string, std::string, std::string, Date);
     Book(std::string, std::string, std::string, std::string, int, int, int);
     Book(const Book&);
+    //Book();
     std::string getIsbn() const;
     std::string getTitolo() const;
     std::string getNome() const;

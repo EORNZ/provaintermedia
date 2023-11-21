@@ -15,7 +15,7 @@ BookShelf::BookShelf(int dim){
         throw Invalid();
     }
     size = 0;
-    buffer_size = dim;
+    buffer_size = dim*2;
     elem = new Book[dim];
 
 }
@@ -34,15 +34,7 @@ BookShelf::BookShelf(std::initializer_list<Book> lst){
     buffer_size = lst.size();
     elem = new Book[size];
     std::copy(lst.begin(),lst.end(),elem);
-    /*
-     oppure senza il copy:
 
-     elem=new double[size];
-     const double *p = lst.begin();
-     for(int i=0; i<size;i++){
-        elem[i] = *(p+i);
-     }
-     */
 }
 
 BookShelf::~BookShelf() {
@@ -50,16 +42,10 @@ BookShelf::~BookShelf() {
 }
 
 Book BookShelf::operator[](int i) const {
-    if (!is_valid(i)){
-        throw OutOfBounds();
-    }
     return elem[i];
 }
 
 Book& BookShelf::operator[](int i) {
-    if (!is_valid(i)){
-        throw OutOfBounds();
-    }
     return elem[i];
 }
 
@@ -115,7 +101,7 @@ void BookShelf::push_back(const Book e){
         elem = new Book[buffer_size];
     }
     else if (size == buffer_size)
-        reserve(1);
+        reserve(buffer_size*2);
 
     elem[size] = e;
     ++size;
