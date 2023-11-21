@@ -14,7 +14,7 @@ BookShelf::BookShelf(int dim){
     if(dim<=0){
         throw Invalid();
     }
-    size = dim;
+    size = 1;
     buffer_size = dim;
     elem = new Book[dim];
     for(int i=0;i<dim;i++){
