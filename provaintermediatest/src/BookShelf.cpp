@@ -101,7 +101,7 @@ void BookShelf::push_back(const Book e){
         elem = new Book[buffer_size];
     }
     else if (size == buffer_size)
-        reserve(buffer_size*2);
+        reserve(buffer_size);
 
     elem[size] = e;
     ++size;
