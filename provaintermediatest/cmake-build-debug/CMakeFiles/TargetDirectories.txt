@@ -1,3 +1,3 @@
-C:/Users/edore/Desktop/test/cmake-build-debug/CMakeFiles/Progetto.dir
-C:/Users/edore/Desktop/test/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/edore/Desktop/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/edore/Desktop/UNI/WORKSPACE/UNI/labc/provaintermedia/provaintermediatest/cmake-build-debug/CMakeFiles/Progetto.dir
+C:/Users/edore/Desktop/UNI/WORKSPACE/UNI/labc/provaintermedia/provaintermediatest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/edore/Desktop/UNI/WORKSPACE/UNI/labc/provaintermedia/provaintermediatest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

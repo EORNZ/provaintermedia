@@ -1,8 +1,7 @@
 #include "../include/Book.h"
 
-class InvalidBook{};
-class InPrestito{};
 
+//costruttori
 Book::Book() {
     this->nome = "NA";
     this->cognome = "NA";
@@ -57,7 +56,31 @@ Book::Book(const Book& b){
     this->stato = b.stato;
 }
 
+//overloading operatori
+bool Book::operator==(const Book &b) const {
+    if(this->isbn == b.isbn){
+        return true;
+    }
+    return false;
+}
 
+bool Book::operator!=(const Book &b) const {
+    return !operator==(b);
+}
+
+//funzioni membro
+void Book::prendi(){
+    if(stato == false){
+        throw InPrestito();
+    }
+    stato = false;
+}
+
+void Book::restituisci(){
+    stato = true;
+}
+
+//ausiliari
 std::string Book::getIsbn() const{
     return isbn;
 }
@@ -82,17 +105,19 @@ bool Book::getStato() const{
     return stato;
 }
 
-bool Book::operator==(const Book &b) const {
-    if(this->isbn == b.isbn){
-        return true;
+//toString
+std::string Book::toString() {
+    std::string s;
+    if(stato){
+        s = "Disponibile";
     }
-    return false;
+    else{
+        s = "In prestito";
+    }
+    return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s + "\n";
 }
 
-bool Book::operator!=(const Book &b) const {
-    return !operator==(b);
-}
-
+//ostream
 std::ostream& operator<<(std::ostream& os, const Book& b) {
     std::string s;
     if(b.getStato()){
@@ -104,27 +129,8 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     return os << b.getNome() << "\n" << b.getCognome() << "\n" << b.getTitolo() << "\n" << b.getIsbn() << "\n" << b.getData() << "\n" << s << "\n";
 }
 
-void Book::prendi(){
-    if(stato == false){
-        throw InPrestito();
-    }
-    stato = false;
-}
 
-void Book::restituisci(){
-    stato = true;
-}
 
-std::string Book::toString() {
-    std::string s;
-    if(stato){
-        s = "Disponibile";
-    }
-    else{
-        s = "In prestito";
-    }
-    return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s + "\n";
-}
 
 
 

@@ -1,15 +1,12 @@
 # ninja log v5
-1	376	7222191275436320	CMakeFiles/Progetto.dir/main.cpp.obj	66e3274ef5e239d2
-439	558	7222192065008245	Progetto.exe	613b7b007374b87
-1	143	7222538278163891	build.ninja	56cb7709edfbb7f1
-4	389	7222192063359176	CMakeFiles/Progetto.dir/src/Date.cpp.obj	56b745b25f08c17c
-8	414	7222192063613217	CMakeFiles/Progetto.dir/src/Book.cpp.obj	1b45b3bee23aa3b4
-13	439	7222192063875795	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	a6f94d5dce7545ce
-3	689	7222540136799383	CMakeFiles/Progetto.dir/main.cpp.obj	66e3274ef5e239d2
-10	751	7222540137432269	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	a6f94d5dce7545ce
-751	989	7222540139724399	Progetto.exe	613b7b007374b87
-5	514	7222540589790440	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	a6f94d5dce7545ce
-515	631	7222540590902349	Progetto.exe	613b7b007374b87
 12	493	7222719369708316	CMakeFiles/Progetto.dir/main.cpp.obj	66e3274ef5e239d2
+515	631	7222540590902349	Progetto.exe	613b7b007374b87
+1	143	7222924922194443	build.ninja	56cb7709edfbb7f1
+4	389	7222192063359176	CMakeFiles/Progetto.dir/src/Date.cpp.obj	56b745b25f08c17c
 19	509	7222719369862392	CMakeFiles/Progetto.dir/src/Book.cpp.obj	1b45b3bee23aa3b4
 26	536	7222719370142352	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	a6f94d5dce7545ce
+7	807	7222934341478773	CMakeFiles/Progetto.dir/main.cpp.obj	7c108675b4cbcf6a
+15	850	7222934341910886	CMakeFiles/Progetto.dir/src/Book.cpp.obj	878dbc4306664228
+27	861	7222934341973900	CMakeFiles/Progetto.dir/src/Date.cpp.obj	2b64bab533efd098
+21	878	7222934342192009	CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj	7c9ab1d2a1e0a7dc
+878	1122	7222934344579259	Progetto.exe	613b7b007374b87

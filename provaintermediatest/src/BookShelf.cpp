@@ -1,9 +1,6 @@
 #include "../include/BookShelf.h"
 
-class Invalid {};
-class OutOfBounds{};
-class Empty{};
-
+//costruttori
 BookShelf::BookShelf() {
     buffer_size=0;
     size=0;
@@ -36,11 +33,12 @@ BookShelf::BookShelf(std::initializer_list<Book> lst){
     std::copy(lst.begin(),lst.end(),elem);
 
 }
-
+//distruttore
 BookShelf::~BookShelf() {
     delete[] elem;
 }
 
+//overloading operatori
 Book BookShelf::operator[](int i) const {
     return elem[i];
 }
@@ -58,14 +56,7 @@ BookShelf BookShelf::operator=(const BookShelf& s){
     return *this;
 }
 
-int BookShelf::get_buffer_size() const {
-    return buffer_size;
-}
-
-int BookShelf::get_size() const {
-    return size;
-}
-
+//funzioni membro
 Book& BookShelf::at(int i){
     if (!is_valid(i)){
         throw OutOfBounds();
@@ -126,6 +117,16 @@ Book BookShelf::pop_back(){
     return e;
 }
 
+//ausiliari
+int BookShelf::get_buffer_size() const {
+    return buffer_size;
+}
+
+int BookShelf::get_size() const {
+    return size;
+}
+
+//toString
 std::string BookShelf::toString() const{
     std::string s = "[";
     for (int i = 0; i < size; i++)
@@ -138,7 +139,6 @@ std::string BookShelf::toString() const{
     return s;
 }
 
-
 bool BookShelf::is_valid(int index) const
 {
     return (index >= 0 && index < size);
@@ -149,7 +149,7 @@ bool BookShelf::is_empty()
     return size != 0;
 }
 
-
+//ostream
 std::ostream& operator<<(std::ostream& os, const BookShelf& b){
     std::string s;
     for (int i = 0; i < b.get_size(); i++) {
