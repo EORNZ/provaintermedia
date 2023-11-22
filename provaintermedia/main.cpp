@@ -35,7 +35,7 @@ int main() {
     cout<<shelf2;
     shelf2=shelf;
     cout<<shelf2<<endl;
-    cout<<shelf2[100]; //termina
+    cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
     
     cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<"\n";
 
