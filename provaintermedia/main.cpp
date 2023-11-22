@@ -35,13 +35,14 @@ int main() {
     cout<<shelf2;
     shelf2=shelf;
     cout<<shelf2<<endl;
-    cout<<shelf2[100]; //non stampa niente stampa
-
+    cout<<shelf2[100]; //termina
+    
     cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<"\n";
 
     if(mybook4==mybook2){
         cout<<"\ni due libri sono uguali";
-    }else{
+    }
+    else{
         cout<<"\ni due libri non sono uguali";
     }
 
