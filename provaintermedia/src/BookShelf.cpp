@@ -12,17 +12,17 @@ BookShelf::BookShelf(int dim){
         throw Invalid();
     }
     size = 0;
-    buffer_size = dim*2;
+    buffer_size = dim;
     elem = new Book[dim];
 
 }
 
-BookShelf::BookShelf(const BookShelf& m){
-    size = m.size;
-    buffer_size = m.buffer_size;
-    elem = new Book[m.size];
+BookShelf::BookShelf(const BookShelf& b){
+    size = b.size;
+    buffer_size = b.buffer_size;
+    elem = new Book[b.size];
     for(int i=0; i<size;i++){
-        elem[i]=m[i];
+        elem[i]=b[i];
     }
 }
 
@@ -46,12 +46,13 @@ Book& BookShelf::operator[](int i) {
     return elem[i];
 }
 
-BookShelf& BookShelf::operator=(const BookShelf& s){
-    Book *np = new Book[s.size];
-    std::copy(s.elem, s.elem + size, np);
-    delete[] this->elem;
-    this->elem = np;
-    this->size = s.size;
+BookShelf& BookShelf::operator=(const BookShelf& b){
+    Book *np = new Book[b.size];
+    std::copy(b.elem, b.elem + b.size, np);
+    delete[] elem;
+    elem = np;
+    size = b.size;
+    buffer_size = b.buffer_size;
     return *this;
 }
 
@@ -76,21 +77,19 @@ void BookShelf::push_back(const Book e){
         elem = new Book[buffer_size];
     }
     else if (size == buffer_size){
-        reserve(buffer_size*2);
+        reserve(buffer_size * 2);
     }
     elem[size] = e;
     size++;
 }
 
 void BookShelf::reserve(int n){
-    if (n>buffer_size){
+    if (n > buffer_size){
         buffer_size = n;
         Book *np = new Book[buffer_size];
-        std::copy(this->elem, this->elem + size, np);
-        delete[] this->elem;
-        this->elem = np;
-    }else{
-        throw Invalid();
+        std::copy(elem, elem + size, np);
+        delete[] elem;
+        elem = np;
     }
 }
 
@@ -125,14 +124,12 @@ std::string BookShelf::toString() const{
     return s;
 }
 
-bool BookShelf::is_valid(int index) const
-{
+bool BookShelf::isValid(int index) const{
     return (index >= 0 && index < size);
 }
 
-bool BookShelf::is_empty()
-{
-    return size != 0;
+bool BookShelf::isEmpty() const{
+    return size==0;
 }
 
 //ostream
