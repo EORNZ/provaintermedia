@@ -56,10 +56,10 @@ RM = C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\edore\Desktop\Progetto\Progetto
+CMAKE_SOURCE_DIR = C:\Users\edore\Desktop\provaintermedia\provaintermediatest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\edore\Desktop\Progetto\Progetto\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\edore\Desktop\provaintermedia\provaintermediatest\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\edore\Desktop\Progetto\Progetto\cmake-build-debug\CMakeFiles C:\Users\edore\Desktop\Progetto\Progetto\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\edore\Desktop\provaintermedia\provaintermediatest\cmake-build-debug\CMakeFiles C:\Users\edore\Desktop\provaintermedia\provaintermediatest\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\edore\Desktop\Progetto\Progetto\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\edore\Desktop\provaintermedia\provaintermediatest\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,78 +128,6 @@ Progetto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/build
 .PHONY : Progetto/fast
 
-Book.obj: Book.cpp.obj
-.PHONY : Book.obj
-
-# target to build an object file
-Book.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Book.cpp.obj
-.PHONY : Book.cpp.obj
-
-Book.i: Book.cpp.i
-.PHONY : Book.i
-
-# target to preprocess a source file
-Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Book.cpp.i
-.PHONY : Book.cpp.i
-
-Book.s: Book.cpp.s
-.PHONY : Book.s
-
-# target to generate assembly for a file
-Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Book.cpp.s
-.PHONY : Book.cpp.s
-
-BookShelf.obj: BookShelf.cpp.obj
-.PHONY : BookShelf.obj
-
-# target to build an object file
-BookShelf.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/BookShelf.cpp.obj
-.PHONY : BookShelf.cpp.obj
-
-BookShelf.i: BookShelf.cpp.i
-.PHONY : BookShelf.i
-
-# target to preprocess a source file
-BookShelf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/BookShelf.cpp.i
-.PHONY : BookShelf.cpp.i
-
-BookShelf.s: BookShelf.cpp.s
-.PHONY : BookShelf.s
-
-# target to generate assembly for a file
-BookShelf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/BookShelf.cpp.s
-.PHONY : BookShelf.cpp.s
-
-Date.obj: Date.cpp.obj
-.PHONY : Date.obj
-
-# target to build an object file
-Date.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Date.cpp.obj
-.PHONY : Date.cpp.obj
-
-Date.i: Date.cpp.i
-.PHONY : Date.i
-
-# target to preprocess a source file
-Date.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Date.cpp.i
-.PHONY : Date.cpp.i
-
-Date.s: Date.cpp.s
-.PHONY : Date.s
-
-# target to generate assembly for a file
-Date.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/Date.cpp.s
-.PHONY : Date.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -224,6 +152,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Book.obj: src/Book.cpp.obj
+.PHONY : src/Book.obj
+
+# target to build an object file
+src/Book.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Book.cpp.obj
+.PHONY : src/Book.cpp.obj
+
+src/Book.i: src/Book.cpp.i
+.PHONY : src/Book.i
+
+# target to preprocess a source file
+src/Book.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Book.cpp.i
+.PHONY : src/Book.cpp.i
+
+src/Book.s: src/Book.cpp.s
+.PHONY : src/Book.s
+
+# target to generate assembly for a file
+src/Book.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Book.cpp.s
+.PHONY : src/Book.cpp.s
+
+src/BookShelf.obj: src/BookShelf.cpp.obj
+.PHONY : src/BookShelf.obj
+
+# target to build an object file
+src/BookShelf.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj
+.PHONY : src/BookShelf.cpp.obj
+
+src/BookShelf.i: src/BookShelf.cpp.i
+.PHONY : src/BookShelf.i
+
+# target to preprocess a source file
+src/BookShelf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/BookShelf.cpp.i
+.PHONY : src/BookShelf.cpp.i
+
+src/BookShelf.s: src/BookShelf.cpp.s
+.PHONY : src/BookShelf.s
+
+# target to generate assembly for a file
+src/BookShelf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/BookShelf.cpp.s
+.PHONY : src/BookShelf.cpp.s
+
+src/Date.obj: src/Date.cpp.obj
+.PHONY : src/Date.obj
+
+# target to build an object file
+src/Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Date.cpp.obj
+.PHONY : src/Date.cpp.obj
+
+src/Date.i: src/Date.cpp.i
+.PHONY : src/Date.i
+
+# target to preprocess a source file
+src/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Date.cpp.i
+.PHONY : src/Date.cpp.i
+
+src/Date.s: src/Date.cpp.s
+.PHONY : src/Date.s
+
+# target to generate assembly for a file
+src/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Date.cpp.s
+.PHONY : src/Date.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -233,18 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Progetto
-	@echo ... Book.obj
-	@echo ... Book.i
-	@echo ... Book.s
-	@echo ... BookShelf.obj
-	@echo ... BookShelf.i
-	@echo ... BookShelf.s
-	@echo ... Date.obj
-	@echo ... Date.i
-	@echo ... Date.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Book.obj
+	@echo ... src/Book.i
+	@echo ... src/Book.s
+	@echo ... src/BookShelf.obj
+	@echo ... src/BookShelf.i
+	@echo ... src/BookShelf.s
+	@echo ... src/Date.obj
+	@echo ... src/Date.i
+	@echo ... src/Date.s
 .PHONY : help
 
 
