@@ -22,10 +22,10 @@ public:
     bool operator<(const Date &) const;
     bool operator>(const Date &) const;
     //ausiliari
-    int getGiorno();
-    int getMese();
-    int getAnno();
-    bool isIgnoto();
+    int getGiorno() const;
+    int getMese() const;
+    int getAnno() const;
+    bool isIgnoto() const;
     //toString
     std::string toString() const;
 
