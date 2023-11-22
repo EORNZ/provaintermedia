@@ -37,13 +37,13 @@ int main() {
     cout<<shelf2<<endl;
     //cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
     
-    cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<"\n";
+    cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------";
 
     if(mybook4==mybook2){
-        cout<<"\ni due libri sono uguali";
+        cout<<"i due libri sono uguali";
     }
     else{
-        cout<<"\ni due libri non sono uguali";
+        cout<<"i due libri non sono uguali";
     }
 
     return 0;
