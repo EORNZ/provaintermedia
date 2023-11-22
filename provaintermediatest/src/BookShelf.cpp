@@ -88,7 +88,7 @@ void BookShelf::set_at(int i, Book e){
 void BookShelf::push_back(const Book e){
 
     if (elem == nullptr){
-        buffer_size = dim*2;
+        buffer_size = 1;
         elem = new Book[buffer_size];
     }
     else if (size == buffer_size)
