@@ -19,8 +19,8 @@ public:
     Date& operator=(const Date&);
     bool operator==(const Date&) const;
     bool operator!=(const Date&) const;
-    bool operator>(const Date &) const;
     bool operator<(const Date &) const;
+    bool operator>(const Date &) const;
     //ausiliari
     int getGiorno();
     int getMese();
