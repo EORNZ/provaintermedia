@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    Date d1= *new Date(10,12,2023);
+    Date d1= Date(10,12,2023);
 
     Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
     mybook1.prendi();
