@@ -140,10 +140,10 @@ std::ostream& operator<<(std::ostream& os, const BookShelf& b){
     std::string s;
     for (int i = 0; i < b.getSize(); i++) {
         if(i<b.getSize()-1){
-            s = s + b[i].toString();
+            s = s + b[i].toString() + "\n";
         }
         else{
-            s = s + b[i].toString() + "\n";
+            s = s + b[i].toString();
         }
     }
     return os << s;

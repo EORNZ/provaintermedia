@@ -2,10 +2,10 @@
 
 //costruttori
 Book::Book() {
-    this->nome = "NA";
-    this->cognome = "NA";
-    this->titolo = "NA";
-    this->isbn = "NA";
+    this->nome = "";
+    this->cognome = "";
+    this->titolo = "";
+    this->isbn = "";
     this->data = Date();
     this->stato = true;
 }
@@ -113,7 +113,7 @@ std::string Book::toString() {
     else{
         s = "In prestito";
     }
-    return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s + "\n";
+    return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s;
 }
 
 //ostream
@@ -125,7 +125,7 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     else{
         s = "In prestito";
     }
-    return os << b.getNome() << "\n" << b.getCognome() << "\n" << b.getTitolo() << "\n" << b.getIsbn() << "\n" << b.getData() << "\n" << s << "\n";
+    return os << b.getNome() << ", " << b.getCognome() << ", " << b.getTitolo() << ", " << b.getIsbn() << ", " << b.getData() << ", " << s;
 }
 
 
