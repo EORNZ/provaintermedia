@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia
+CMAKE_SOURCE_DIR = C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Progetto.dir/depend.make
@@ -69,60 +69,60 @@ include CMakeFiles/Progetto.dir/progress.make
 include CMakeFiles/Progetto.dir/flags.make
 
 CMakeFiles/Progetto.dir/main.cpp.obj: CMakeFiles/Progetto.dir/flags.make
-CMakeFiles/Progetto.dir/main.cpp.obj: C:/Users/elena/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/main.cpp
+CMakeFiles/Progetto.dir/main.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/main.cpp
 CMakeFiles/Progetto.dir/main.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Progetto.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/main.cpp.obj -MF CMakeFiles\Progetto.dir\main.cpp.obj.d -o CMakeFiles\Progetto.dir\main.cpp.obj -c C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Progetto.dir/main.cpp.obj"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/main.cpp.obj -MF CMakeFiles\Progetto.dir\main.cpp.obj.d -o CMakeFiles\Progetto.dir\main.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp
 
 CMakeFiles/Progetto.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp > CMakeFiles\Progetto.dir\main.cpp.i
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp > CMakeFiles\Progetto.dir\main.cpp.i
 
 CMakeFiles/Progetto.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp -o CMakeFiles\Progetto.dir\main.cpp.s
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp -o CMakeFiles\Progetto.dir\main.cpp.s
 
 CMakeFiles/Progetto.dir/src/Book.cpp.obj: CMakeFiles/Progetto.dir/flags.make
-CMakeFiles/Progetto.dir/src/Book.cpp.obj: C:/Users/elena/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Book.cpp
+CMakeFiles/Progetto.dir/src/Book.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Book.cpp
 CMakeFiles/Progetto.dir/src/Book.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Progetto.dir/src/Book.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/Book.cpp.obj -MF CMakeFiles\Progetto.dir\src\Book.cpp.obj.d -o CMakeFiles\Progetto.dir\src\Book.cpp.obj -c C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Progetto.dir/src/Book.cpp.obj"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/Book.cpp.obj -MF CMakeFiles\Progetto.dir\src\Book.cpp.obj.d -o CMakeFiles\Progetto.dir\src\Book.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp
 
 CMakeFiles/Progetto.dir/src/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/src/Book.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp > CMakeFiles\Progetto.dir\src\Book.cpp.i
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp > CMakeFiles\Progetto.dir\src\Book.cpp.i
 
 CMakeFiles/Progetto.dir/src/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/src/Book.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp -o CMakeFiles\Progetto.dir\src\Book.cpp.s
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Book.cpp -o CMakeFiles\Progetto.dir\src\Book.cpp.s
 
 CMakeFiles/Progetto.dir/src/Date.cpp.obj: CMakeFiles/Progetto.dir/flags.make
-CMakeFiles/Progetto.dir/src/Date.cpp.obj: C:/Users/elena/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Date.cpp
+CMakeFiles/Progetto.dir/src/Date.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Date.cpp
 CMakeFiles/Progetto.dir/src/Date.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Progetto.dir/src/Date.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/Date.cpp.obj -MF CMakeFiles\Progetto.dir\src\Date.cpp.obj.d -o CMakeFiles\Progetto.dir\src\Date.cpp.obj -c C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Progetto.dir/src/Date.cpp.obj"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/Date.cpp.obj -MF CMakeFiles\Progetto.dir\src\Date.cpp.obj.d -o CMakeFiles\Progetto.dir\src\Date.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp
 
 CMakeFiles/Progetto.dir/src/Date.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/src/Date.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp > CMakeFiles\Progetto.dir\src\Date.cpp.i
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp > CMakeFiles\Progetto.dir\src\Date.cpp.i
 
 CMakeFiles/Progetto.dir/src/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/src/Date.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp -o CMakeFiles\Progetto.dir\src\Date.cpp.s
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\Date.cpp -o CMakeFiles\Progetto.dir\src\Date.cpp.s
 
 CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj: CMakeFiles/Progetto.dir/flags.make
-CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj: C:/Users/elena/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/BookShelf.cpp
+CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/BookShelf.cpp
 CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj -MF CMakeFiles\Progetto.dir\src\BookShelf.cpp.obj.d -o CMakeFiles\Progetto.dir\src\BookShelf.cpp.obj -c C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj -MF CMakeFiles\Progetto.dir\src\BookShelf.cpp.obj.d -o CMakeFiles\Progetto.dir\src\BookShelf.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp
 
 CMakeFiles/Progetto.dir/src/BookShelf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/src/BookShelf.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp > CMakeFiles\Progetto.dir\src\BookShelf.cpp.i
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp > CMakeFiles\Progetto.dir\src\BookShelf.cpp.i
 
 CMakeFiles/Progetto.dir/src/BookShelf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/src/BookShelf.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp -o CMakeFiles\Progetto.dir\src\BookShelf.cpp.s
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\BookShelf.cpp -o CMakeFiles\Progetto.dir\src\BookShelf.cpp.s
 
 # Object files for target Progetto
 Progetto_OBJECTS = \
@@ -142,7 +142,7 @@ Progetto.exe: CMakeFiles/Progetto.dir/build.make
 Progetto.exe: CMakeFiles/Progetto.dir/linkLibs.rsp
 Progetto.exe: CMakeFiles/Progetto.dir/objects1.rsp
 Progetto.exe: CMakeFiles/Progetto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Progetto.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Progetto.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Progetto.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/Progetto.dir/clean:
 .PHONY : CMakeFiles/Progetto.dir/clean
 
 CMakeFiles/Progetto.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug C:\Users\elena\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles\Progetto.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles\Progetto.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Progetto.dir/depend
 
