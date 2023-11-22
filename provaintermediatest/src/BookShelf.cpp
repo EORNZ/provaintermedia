@@ -47,7 +47,7 @@ Book& BookShelf::operator[](int i) {
     return elem[i];
 }
 
-BookShelf BookShelf::operator=(const BookShelf& s){
+BookShelf& BookShelf::operator=(const BookShelf& s){
     Book *np = new Book[s.size];
     std::copy(s.elem, s.elem + size, np);
     delete[] this->elem;
@@ -64,25 +64,11 @@ Book& BookShelf::at(int i){
     return elem[i];
 }
 
-Book BookShelf::at(int i) const{
-    if (!is_valid(i)){
+Book BookShelf::at(int i) const {
+    if (!is_valid(i)) {
         throw OutOfBounds();
     }
     return elem[i];
-}
-
-void BookShelf::set_at(int i, Book e) const{
-    if (!is_valid(i)){
-        throw OutOfBounds();
-    }
-    elem[i] = e;
-}
-
-void BookShelf::set_at(int i, Book e){
-    if (!is_valid(i)){
-        throw OutOfBounds();
-    }
-    elem[i] = e;
 }
 
 void BookShelf::push_back(const Book e){
@@ -92,16 +78,16 @@ void BookShelf::push_back(const Book e){
         elem = new Book[buffer_size];
     }
     else if (size == buffer_size)
-        reserve(buffer_size);
+        reserve(buffer_size*2);
 
     elem[size] = e;
-    ++size;
+    size++;
 }
 
 void BookShelf::reserve(int n){
-    if (n < 0)
+    if (n>buffer_size)
         throw Invalid();
-    buffer_size += n;
+    buffer_size = n;
     Book *np = new Book[buffer_size];
     std::copy(this->elem, this->elem + size, np);
     delete[] this->elem;
@@ -113,16 +99,16 @@ Book BookShelf::pop_back(){
         throw Empty();
     }
     Book e = elem[size-1];
-    --size;
+    size--;
     return e;
 }
 
 //ausiliari
-int BookShelf::get_buffer_size() const {
+int BookShelf::getBufferSize() const {
     return buffer_size;
 }
 
-int BookShelf::get_size() const {
+int BookShelf::getSize() const {
     return size;
 }
 
@@ -152,8 +138,8 @@ bool BookShelf::is_empty()
 //ostream
 std::ostream& operator<<(std::ostream& os, const BookShelf& b){
     std::string s;
-    for (int i = 0; i < b.get_size(); i++) {
-        if(i<b.get_size()-1){
+    for (int i = 0; i < b.getSize(); i++) {
+        if(i<b.getSize()-1){
             s = s + b[i].toString() + ", ";
         }
         else{

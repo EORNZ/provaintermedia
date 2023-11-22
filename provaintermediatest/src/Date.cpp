@@ -2,21 +2,20 @@
 
 //costruttori
 Date::Date(){
-    this->giorno = 1;
-    this->mese = 1;
-    this->anno = 1900;
+    ignoto=true;
 }
 
 Date::Date(int gg, int mm, int aaaa) {
 
-    if((gg > 0 && gg < 32) && (mm > 0 && mm < 13) && (aaaa >= 1900 && aaaa <= 2024)){
-        if((gg > 28 && mm == 2 ) || ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && gg > 30)){
+    if((gg > 0 && gg < 32) && (mm > 0 && mm < 13) && (aaaa >= 0 && aaaa <= 2024)){
+        if((gg>29 && mm==2 && aaaa%4==0) || (gg > 28 && mm == 2 ) || ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && gg > 30)){
             throw InvalidDate();
         }
         else{
             this->giorno = gg;
             this->mese = mm;
             this->anno = aaaa;
+            this->ignoto=false;
         }
     }
     else{
@@ -26,15 +25,16 @@ Date::Date(int gg, int mm, int aaaa) {
 
 
 //overloading operatori
-Date Date::operator=(const Date& d){
+Date& Date::operator=(const Date& d){
     this->giorno = d.giorno;
     this->mese = d.mese;
     this->anno = d.anno;
-    return Date(giorno,mese,anno);
+    this->ignoto = d.ignoto;
+    return *this;
 }
 
 bool Date::operator==(const Date &d) const {
-    return (this->giorno == d.giorno && this->mese == d.mese && this->anno == d.anno);
+    return (this->giorno == d.giorno && this->mese == d.mese && this->anno == d.anno && this->ignoto == d.ignoto);
 }
 
 bool Date::operator!=(const Date &d) const {
@@ -69,12 +69,22 @@ int Date::getMese() {
 int Date::getAnno() {
     return anno;
 }
+bool Date::isIgnoto() {
+    return ignoto;
+}
 
 //toString
 std::string Date::toString() const{
-    std::string s = std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
+    std::string s;
+    if(ignoto){
+        s= "Data ignota";
+    }else{
+        s = std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
+    }
     return s;
 }
+
+
 
 //ostream
 std::ostream &operator<<(std::ostream &os, const Date &d)

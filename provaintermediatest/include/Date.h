@@ -16,7 +16,7 @@ public:
     Date();
     Date(int,int,int);
     //overloading operatori
-    Date operator=(const Date&);
+    Date& operator=(const Date&);
     bool operator==(const Date&) const;
     bool operator!=(const Date&) const;
     bool operator>(const Date &) const;
@@ -25,6 +25,7 @@ public:
     int getGiorno();
     int getMese();
     int getAnno();
+    bool isIgnoto();
     //toString
     std::string toString() const;
 
@@ -32,6 +33,7 @@ private:
     int giorno;
     int mese;
     int anno;
+    bool ignoto;
 };
 
 //ostream

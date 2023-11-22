@@ -21,18 +21,16 @@ public:
     //overloading operatori
     Book operator[](int) const;
     Book& operator[](int);
-    BookShelf operator=(const BookShelf&);
+    BookShelf& operator=(const BookShelf&);
     //funzioni membro
     Book& at(int);
     Book at(int) const;
-    void set_at(int, Book);
-    void set_at(int, Book) const;
     void push_back(const Book);
     Book pop_back();
     void reserve(int);
     //ausiliari
-    int get_buffer_size() const;
-    int get_size() const;
+    int getBufferSize() const;
+    int getSize() const;
     bool is_valid(int index) const;
     bool is_empty();
     //tostring
