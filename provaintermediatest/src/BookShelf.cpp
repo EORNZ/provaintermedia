@@ -83,13 +83,15 @@ void BookShelf::push_back(const Book e){
 }
 
 void BookShelf::reserve(int n){
-    if (n<buffer_size)
+    if (n>buffer_size){
+        buffer_size = n;
+        Book *np = new Book[buffer_size];
+        std::copy(this->elem, this->elem + size, np);
+        delete[] this->elem;
+        this->elem = np;
+    }else{
         throw Invalid();
-    buffer_size = n;
-    Book *np = new Book[buffer_size];
-    std::copy(this->elem, this->elem + size, np);
-    delete[] this->elem;
-    this->elem = np;
+    }
 }
 
 Book BookShelf::pop_back(){
