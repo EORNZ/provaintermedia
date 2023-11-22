@@ -58,14 +58,14 @@ BookShelf& BookShelf::operator=(const BookShelf& b){
 
 //funzioni membro
 Book& BookShelf::at(int i){
-    if (!is_valid(i)){
+    if (!isValid(i)){
         throw OutOfBounds();
     }
     return elem[i];
 }
 
 Book BookShelf::at(int i) const {
-    if (!is_valid(i)) {
+    if (!isValid(i)) {
         throw OutOfBounds();
     }
     return elem[i];
@@ -94,7 +94,7 @@ void BookShelf::reserve(int n){
 }
 
 Book BookShelf::pop_back(){
-    if (is_empty()){
+    if (isEmpty()){
         throw Empty();
     }
     Book e = elem[size-1];
