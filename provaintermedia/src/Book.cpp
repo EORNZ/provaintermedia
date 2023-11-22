@@ -105,7 +105,7 @@ bool Book::getStato() const{
 }
 
 //toString
-std::string Book::toString() {
+std::string Book::toString() const {
     std::string s;
     if(stato){
         s = "Disponibile";

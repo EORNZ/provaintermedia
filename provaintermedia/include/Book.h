@@ -29,7 +29,7 @@ public:
     Date getData() const;
     bool getStato() const;
     //tostring
-    std::string toString();
+    std::string toString() const;
 
 private:
     std::string isbn;
