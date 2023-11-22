@@ -32,7 +32,7 @@ public:
     int getBufferSize() const;
     int getSize() const;
     bool isValid(int index) const;
-    bool isEmpty();
+    bool isEmpty() const;
     //tostring
     std::string toString() const;
 
