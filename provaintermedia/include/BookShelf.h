@@ -31,8 +31,8 @@ public:
     //ausiliari
     int getBufferSize() const;
     int getSize() const;
-    bool is_valid(int index) const;
-    bool is_empty();
+    bool isValid(int index) const;
+    bool isEmpty();
     //tostring
     std::string toString() const;
 
