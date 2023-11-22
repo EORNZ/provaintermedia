@@ -58,16 +58,16 @@ bool Date::operator>(const Date &d) const {
 }
 
 //ausiliari
-int Date::getGiorno() {
+int Date::getGiorno() const{
     return giorno;
 }
-int Date::getMese() {
+int Date::getMese() const{
     return mese;
 }
-int Date::getAnno() {
+int Date::getAnno() const{
     return anno;
 }
-bool Date::isIgnoto() {
+bool Date::isIgnoto() const{
     return ignoto;
 }
 
