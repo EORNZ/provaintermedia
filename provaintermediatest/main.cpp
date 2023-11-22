@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
     cout<<"\n-------BOOKSHELF-------";
-    Date d1= *new Date(10,12,2023);
+    Date d1= *new Date(29,2,2024);
 
     Book mybook("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
     mybook.prendi();
@@ -27,7 +27,6 @@ int main() {
     shelf.push_back(mybook4);
 
 
-    shelf.reserve(3);
     cout<< "\n"<<shelf;
 
 

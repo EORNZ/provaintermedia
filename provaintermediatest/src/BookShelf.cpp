@@ -31,7 +31,6 @@ BookShelf::BookShelf(std::initializer_list<Book> lst){
     buffer_size = lst.size();
     elem = new Book[size];
     std::copy(lst.begin(),lst.end(),elem);
-
 }
 //distruttore
 BookShelf::~BookShelf() {
@@ -72,20 +71,19 @@ Book BookShelf::at(int i) const {
 }
 
 void BookShelf::push_back(const Book e){
-
     if (elem == nullptr){
         buffer_size = 1;
         elem = new Book[buffer_size];
     }
-    else if (size == buffer_size)
+    else if (size == buffer_size){
         reserve(buffer_size*2);
-
+    }
     elem[size] = e;
     size++;
 }
 
 void BookShelf::reserve(int n){
-    if (n>buffer_size)
+    if (n<buffer_size)
         throw Invalid();
     buffer_size = n;
     Book *np = new Book[buffer_size];
@@ -140,7 +138,7 @@ std::ostream& operator<<(std::ostream& os, const BookShelf& b){
     std::string s;
     for (int i = 0; i < b.getSize(); i++) {
         if(i<b.getSize()-1){
-            s = s + b[i].toString() + ", ";
+            s = s + b[i].toString();
         }
         else{
             s = s + b[i].toString() + "\n";

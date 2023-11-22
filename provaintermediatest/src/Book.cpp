@@ -1,6 +1,5 @@
 #include "../include/Book.h"
 
-
 //costruttori
 Book::Book() {
     this->nome = "NA";

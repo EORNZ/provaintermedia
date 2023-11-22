@@ -2,13 +2,12 @@
 
 //costruttori
 Date::Date(){
-    ignoto=true;
+    ignoto = true;
 }
 
 Date::Date(int gg, int mm, int aaaa) {
-
-    if((gg > 0 && gg < 32) && (mm > 0 && mm < 13) && (aaaa >= 0 && aaaa <= 2024)){
-        if((gg>29 && mm==2 && aaaa%4==0) || (gg > 28 && mm == 2 ) || ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && gg > 30)){
+    if((gg > 0 && gg < 32) && (mm > 0 && mm < 13) && (aaaa >= 1 && aaaa <= 2024)){
+        if((gg>29 && mm==2 && aaaa%4==0) || (gg > 28 && mm == 2 && aaaa%4!=0) || ((mm == 4 || mm == 6 || mm == 9 || mm == 11) && gg > 30)){
             throw InvalidDate();
         }
         else{
@@ -22,7 +21,6 @@ Date::Date(int gg, int mm, int aaaa) {
         throw InvalidDate();
     }
 }
-
 
 //overloading operatori
 Date& Date::operator=(const Date& d){
@@ -47,9 +45,9 @@ bool Date::operator<(const Date &d) const {
     else if (this->anno > d.anno)
         return false;
 
-    if (mese < d.mese)
+    if (this->mese < d.mese)
         return true;
-    else if (mese > d.mese)
+    else if (this->mese > d.mese)
         return false;
 
     return giorno < d.giorno;
@@ -83,8 +81,6 @@ std::string Date::toString() const{
     }
     return s;
 }
-
-
 
 //ostream
 std::ostream &operator<<(std::ostream &os, const Date &d)
