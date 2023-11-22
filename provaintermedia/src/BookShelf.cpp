@@ -94,7 +94,7 @@ void BookShelf::reserve(int n){
 }
 
 Book BookShelf::pop_back(){
-    if (!is_empty()){
+    if (is_empty()){
         throw Empty();
     }
     Book e = elem[size-1];
