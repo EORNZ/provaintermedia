@@ -6,9 +6,7 @@ using namespace std;
 
 int main() {
     Date d1 = Date(10,12,2023);
-    Book mybook12;
-    BookShelf shelf55 = { mybook12 };
-    cout<<shelf55;
+
     cout<<"------------------------------------------------------------------------";
     Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
     mybook1.prendi();
@@ -39,6 +37,9 @@ int main() {
     shelf2=shelf;
     cout<<shelf2<<endl;
     //cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
+    Book mybook12;
+    BookShelf shelf55 = { mybook12 };
+    cout<<shelf55;
     
     cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<"\n";
 
