@@ -7,7 +7,7 @@ Book::Book() {
     this->titolo = "";
     this->isbn = "";
     this->data = Date();
-    this->stato = true;
+    this->stato = false;
 }
 
 Book::Book(std::string nome, std::string cognome, std::string titolo, std::string isbn){
@@ -109,8 +109,9 @@ std::string Book::toString() const {
     std::string s;
     if(stato){
         s = "Disponibile";
-    }
-    else{
+    }else if(this->data.isIgnoto() && !stato ){
+        s = "Indisponibile";
+    }else {
         s = "In prestito";
     }
     return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s;
@@ -122,7 +123,9 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     if(b.getStato()){
         s = "Disponibile";
     }
-    else{
+    else if(b.getData().isIgnoto() && !b.getStato()){
+        s = "Indisponibile";
+    }else{
         s = "In prestito";
     }
     return os << b.getNome() << ", " << b.getCognome() << ", " << b.getTitolo() << ", " << b.getIsbn() << ", " << b.getData() << ", " << s;

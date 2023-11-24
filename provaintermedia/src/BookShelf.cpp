@@ -14,7 +14,6 @@ BookShelf::BookShelf(int dim){
     size = 0;
     buffer_size = dim;
     elem = new Book[dim];
-
 }
 
 BookShelf::BookShelf(const BookShelf& b){
