@@ -76,7 +76,9 @@ void Book::prendi(){
 }
 
 void Book::restituisci(){
-    stato = true;
+    if(!stato){
+        stato = true;
+    }
 }
 
 //ausiliari
@@ -110,9 +112,6 @@ std::string Book::toString() const {
     if(stato){
         s = "Disponibile";
     }
-    else if(this->data.isIgnoto() && !stato ){
-        return "Libro inesistente/vuoto";
-    }
     else {
         s = "In prestito";
     }
@@ -124,9 +123,6 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     std::string s;
     if(b.getStato()){
         s = "Disponibile";
-    }
-    else if(b.getData().isIgnoto() && !b.getStato()){
-        return os << "Libro inesistente/vuoto";
     }
     else{
         s = "In prestito";
