@@ -109,9 +109,11 @@ std::string Book::toString() const {
     std::string s;
     if(stato){
         s = "Disponibile";
-    }else if(this->data.isIgnoto() && !stato ){
+    }
+    else if(this->data.isIgnoto() && !stato ){
         s = "Indisponibile";
-    }else {
+    }
+    else {
         s = "In prestito";
     }
     return nome + ", " + cognome + ", " + titolo + ", " + isbn + ", " + data.toString() + ", " + s;
@@ -125,7 +127,8 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     }
     else if(b.getData().isIgnoto() && !b.getStato()){
         s = "Indisponibile";
-    }else{
+    }
+    else{
         s = "In prestito";
     }
     return os << b.getNome() << ", " << b.getCognome() << ", " << b.getTitolo() << ", " << b.getIsbn() << ", " << b.getData() << ", " << s;
