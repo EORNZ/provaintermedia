@@ -24,12 +24,11 @@ int main() {
 
     cout<<shelf<<"\n";
 
-
-    cout<<"---------Elimino l'ultimo elemento--------"<<"\n";
+    cout<<"---------Elimino l'ultimo elemento--------"<<endl;
     shelf.pop_back();
     cout<<shelf<<"\n";
 
-    cout<<"---------gioco con i bookshelf--------"<<"\n";
+    cout<<"---------gioco con i bookshelf--------"<<endl;
 
     BookShelf shelf2;
     cout<<shelf2;
@@ -40,7 +39,7 @@ int main() {
     BookShelf shelf55 = { mybook12 };
     cout<<shelf55<<endl;
     
-    cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<"\n";
+    cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<endl;
 
     if(mybook4==mybook2){
         cout<<"i due libri sono uguali";
