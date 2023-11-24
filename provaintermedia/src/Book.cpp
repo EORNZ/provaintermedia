@@ -111,7 +111,7 @@ std::string Book::toString() const {
         s = "Disponibile";
     }
     else if(this->data.isIgnoto() && !stato ){
-        return "Indisponibile";
+        return "Libro inesistente/vuoto";
     }
     else {
         s = "In prestito";
@@ -126,7 +126,7 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
         s = "Disponibile";
     }
     else if(b.getData().isIgnoto() && !b.getStato()){
-        return os << "Indisponibile";
+        return os << "Libro inesistente/vuoto";
     }
     else{
         s = "In prestito";
