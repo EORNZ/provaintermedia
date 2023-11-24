@@ -3,9 +3,6 @@
 
 #include <iostream>
 
-/*enum class Month{
-    jan = 1, feb, mar, apr, mag, giu, lug, ago, set, nov, dic
-};*/
 
 class InvalidDate{};
 
