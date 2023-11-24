@@ -126,7 +126,7 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
         s = "Disponibile";
     }
     else if(b.getData().isIgnoto() && !b.getStato()){
-        return "Indisponibile";
+        return os << "Indisponibile";
     }
     else{
         s = "In prestito";
