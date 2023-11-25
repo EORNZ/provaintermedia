@@ -49,8 +49,8 @@ dove
 
 ```cpp
 Date dataPubblicazione(1, 1, 2023);
-Book libro1("123456789", "Titolo Libro", "Nome Autore", "Cognome Autore", dataPubblicazione);
-Book libro2("987654321", "Altro Titolo", "Altro Nome", "Altro Cognome", 2, 2, 2022);
+Book libro1("Nome Autore", "Cognome Autore", "Titolo Libro", "123456789", dataPubblicazione);
+Book libro2("Altro Nome", "Altro Cognome", "Altro Titolo", "987654321", 2, 2, 2022);
 
 BookShelf libreria(1);
 libreria.push_back(libro1);
