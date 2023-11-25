@@ -62,10 +62,12 @@ int main() {
         cout<<"La libreria non presenta 2 libri uguali\n";
     }
 
+
     Book mybook5("Collen", "Hoover", "Ugly Love", "888-345-899-9");
     BookShelf shelf3{mybook1, mybook2, mybook5};
+    cout<<"\n----------------Creazione terza libreria: Shelf3, con differente inserimento----------------\n"<<shelf3<<endl;
+    cout<<"\nPrendo in prestito il libro 3\n";
     shelf3[2].prendi(); //mybook5 da disponibile diventa in prestito
-    cout<<"\n----------------Creazione terza libreria: Shelf3, con differente inserimento----------------\n";
     cout<<shelf3;
 
     return 0;
