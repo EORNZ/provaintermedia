@@ -56,6 +56,23 @@ BookShelf& BookShelf::operator=(const BookShelf& b){
 }
 
 //funzioni membro
+void BookShelf::prendi_libro(Book &b){
+    for (int i = 0; i < size; i++) {
+        if(b==elem[i] && elem[i].getStato() /*se è presente && disponibile*/ ){
+            elem[i].prendi();
+            return;
+        }
+    }
+}
+
+void BookShelf::restituisci_libro(Book &b){
+    for (int i = 0; i < size; i++) {
+        if(b==elem[i] && !elem[i].getStato() /*se è presente && disponibile*/ ){
+            elem[i].restituisci();
+            return;
+        }
+    }
+}
 Book& BookShelf::at(int i){
     if (!isValid(i)){
         throw OutOfBounds();
@@ -70,7 +87,7 @@ Book BookShelf::at(int i) const {
     return elem[i];
 }
 
-void BookShelf::push_back(const Book e){
+void BookShelf::push_back(const Book& e){
     if (elem == nullptr){
         buffer_size = 1;
         elem = new Book[buffer_size];

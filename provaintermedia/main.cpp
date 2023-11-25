@@ -29,17 +29,6 @@ int main() {
     shelf.pop_back();
     cout<<shelf<<"\n";
 
-    cout<<"---------gioco con i bookshelf--------"<<endl;
-
-    BookShelf shelf2;
-    cout<<shelf2;
-    shelf2=shelf;
-    cout<<shelf2<<endl;
-    //cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
-    Book mybook12;
-    BookShelf shelf55 = { mybook12 };
-    cout<<shelf55<<endl;
-    
     cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<endl;
 
     int a = 1; //devono rimanere all'interno della size della shelf
@@ -53,13 +42,48 @@ int main() {
     }
 
 
+    cout<<"\n\n---------gioco con i bookshelf--------"<<endl;
+
+    BookShelf shelf2;
+    cout<<shelf2;
+    shelf2=shelf;
+    cout<<shelf2<<endl;
+    //cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
+    Book mybook12;
+    BookShelf shelf55 = { mybook12 };
+    cout<<shelf55;
+
+    cout<< "\ntest con nuovo metodo per prendere un libro dentro una libreria \n";
+    BookShelf shelfedo(10);
+    Book book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
+    Book book2("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
+    shelfedo.push_back(book);
+    shelfedo.push_back(book2);
+    shelfedo.push_back(book);
+
+    book.prendi();
+
+    cout<<"book.prendi() stampo shelf \n"<<shelfedo<<"\n";
+
+    shelfedo.prendi_libro(book);
+    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
+    shelfedo.prendi_libro(book);
+    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
+    shelfedo.restituisci_libro(book);
+    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
     return 0;
 }
 
 
 //test main
 
-/*Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
+/*
+
+
+ *
+ *
+ * -------------------------------------------------------------------------------------------
+ * Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
     mybook1.prendi();
 
     Date d1 = Date(10,12,2023);
