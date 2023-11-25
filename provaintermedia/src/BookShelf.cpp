@@ -67,7 +67,7 @@ void BookShelf::prendi_libro(Book &b){
 
 void BookShelf::restituisci_libro(Book& b){
     for (int i = 0; i < size; i++) {
-        if(b==elem[i] && !elem[i].getStato() /*se è presente && disponibile*/ ){
+        if(b==elem[i] && !elem[i].getStato() /*se "è presente" && in prestito*/ ){
             elem[i].restituisci();
             return;
         }
