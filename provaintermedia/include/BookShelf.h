@@ -18,6 +18,7 @@ public:
     BookShelf(std::initializer_list<Book>);
     //distruttore
     ~BookShelf();
+
     //overloading operatori
     Book operator[](int) const;
     Book& operator[](int);
