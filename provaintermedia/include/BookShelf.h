@@ -23,9 +23,11 @@ public:
     Book& operator[](int);
     BookShelf& operator=(const BookShelf&);
     //funzioni membro
+    void prendi_libro(Book&);
+    void restituisci_libro(Book &b);
     Book& at(int);
     Book at(int) const;
-    void push_back(const Book);
+    void push_back(const Book&);
     Book pop_back();
     void reserve(int);
     //ausiliari
@@ -40,6 +42,8 @@ private:
     Book *elem;
     int size;
     int buffer_size;
+
+
 };
 
 //ostream
