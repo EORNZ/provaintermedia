@@ -22,7 +22,6 @@ public:
     int getGiorno() const;
     int getMese() const;
     int getAnno() const;
-    bool isIgnoto() const;
 
     //toString
     std::string toString() const;
