@@ -3,7 +3,7 @@ project(Progetto)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Progetto main.cpp
+add_executable(Progetto src/main.cpp
         src/Book.cpp
         include/Book.h
         src/Date.cpp
