@@ -18,6 +18,7 @@ Il codice è organizzato nelle seguenti directory:
 ┃ ┣ 📜 main.cpp  
 ┣📜 CMakeLists.txt  
 ┣📜 README.md  
+┣📜 README.txt  
 
 dove
 
