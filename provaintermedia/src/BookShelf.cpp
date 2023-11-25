@@ -56,7 +56,7 @@ BookShelf& BookShelf::operator=(const BookShelf& b){
 }
 
 //funzioni membro
-void BookShelf::prendi_libro(const Book &b){
+void BookShelf::prendi_libro(Book &b){
     for (int i = 0; i < size; i++) {
         if(b==elem[i] && elem[i].getStato() /*se è presente && disponibile*/ ){
             elem[i].prendi();
@@ -66,7 +66,7 @@ void BookShelf::prendi_libro(const Book &b){
     std::cout<< "nessun [ "<< b <<" ] disponibile\n"; //da sistemare
 }
 
-void BookShelf::restituisci_libro(const Book& b){
+void BookShelf::restituisci_libro(Book& b){
     for (int i = 0; i < size; i++) {
         if(b==elem[i] && !elem[i].getStato() /*se "è presente" && in prestito*/ ){
             elem[i].restituisci();
