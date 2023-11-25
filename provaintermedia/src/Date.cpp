@@ -2,7 +2,9 @@
 
 //costruttori
 Date::Date(){
-    ignoto = true;
+    this->giorno=0;
+    this->mese=0;
+    this->anno=0;
 }
 
 Date::Date(int gg, int mm, int aaaa) {
@@ -74,7 +76,7 @@ bool Date::isIgnoto() const{
 //toString
 std::string Date::toString() const{
     std::string s;
-    if(ignoto){
+    if(giorno==0 || mese==0 || anno==0){
         s= "Data ignota";
     }else{
         s = std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);

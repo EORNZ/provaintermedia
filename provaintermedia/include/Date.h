@@ -30,7 +30,6 @@ private:
     int giorno;
     int mese;
     int anno;
-    bool ignoto;
 };
 
 //ostream
