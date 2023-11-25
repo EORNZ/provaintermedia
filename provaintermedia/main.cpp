@@ -53,7 +53,7 @@ int main() {
     BookShelf shelf55 = { mybook12 };
     cout<<shelf55;
 
-    cout<< "\ntest con nuovo metodo per prendere un libro dentro una libreria \n";
+    cout<< "\n\ntest con nuovo metodo per prendere un libro dentro una libreria \n";
     BookShelf shelfedo(10);
     Book book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
     Book book2("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
@@ -66,11 +66,11 @@ int main() {
     cout<<"book.prendi() stampo shelf \n"<<shelfedo<<"\n";
 
     shelfedo.prendi_libro(book);
-    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
+    cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     shelfedo.prendi_libro(book);
-    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
+    cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     shelfedo.restituisci_libro(book);
-    cout<<"shelf.prendiLibro(book) stampo shelf \n"<<shelfedo<<"\n";
+    cout<<"shelf.restituisci_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     return 0;
 }
 
