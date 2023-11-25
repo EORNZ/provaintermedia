@@ -1,6 +1,6 @@
 Prova Intermedia
 
-Il programma è progettato per gestire una libreria utilizzando tre classi principali: `Date`, `Book`, e `BookShelf`. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato (che rappresenta la disponibilità del libro). Infine, la classe `BookShelf` implementa un std::vector utilizzando un array di Book dinamicamente ridimensionabile.
+Il programma è progettato per gestire una libreria utilizzando tre classi principali: Date, Book, e BookShelf. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato (che rappresenta la disponibilità del libro). Infine, la classe BookShelf implementa un std::vector utilizzando un array di Book dinamicamente ridimensionabile.
 
 Struttura del codice
 
@@ -22,27 +22,27 @@ Il codice è organizzato nelle seguenti directory:
 
 dove
 
-1. **`include`**: Contiene i file header.
-    - `Book.h`: Contiene la definizione della classe `Book`.
-    - `BookShelf.h`: Contiene la definizione della classe `BookShelf`. 
-    - `Date.h`: Contiene la definizione della classe `Date`.
+1. include: Contiene i file header.
+    - Book.h: Contiene la definizione della classe Book.
+    - BookShelf.h: Contiene la definizione della classe BookShelf. 
+    - Date.h`: Contiene la definizione della classe Date.
     
-2. **`src`**: Contiene i file sorgente.
-    - `Book.cpp`: Contiene l'implementazione della classe `Book`.
-    - `BookShelf.cpp`: Contiene l'implementazione della classe `BookShelf`.
-    - `Date.cpp`: Contiene l'implementazione della classe `Date` .
-    - `main.cpp`: Un file sorgente di esempio che illustra come utilizzare le classi nel tuo progetto.
+2. src: Contiene i file sorgente.
+    - Book.cpp: Contiene l'implementazione della classe Book.
+    - BookShelf.cpp: Contiene l'implementazione della classe BookShelf.
+    - Date.cpp: Contiene l'implementazione della classe Date.
+    - main.cpp: Un file sorgente di esempio che illustra come utilizzare le classi nel tuo progetto.
 
-3. `CMakeLists.txt`: Gestisce i file nella compilazione del programma
+3. CMakeLists.txt: Gestisce i file nella compilazione del programma
 
-## Scelte progettuali
+Scelte progettuali
 
-- Classe `Date`  
+- Classe Date  
   Il costruttore di default inizializza i membri a 0 e assumiamo che una data con tali valori sia IGNOTA.
-- Classe `Book` 
+- Classe Book 
   Il costruttore di default assegna agli attributi membro stringhe vuote e la data la inizializza di default cioè col significato di ignota. 
   Questo costruttore non andrebbe utilizzato per la creazione di oggetti libro in quanto un libro con i membri non assegnati non dovrebbe esistere ma lo abbiamo dovuto creare in funzione dell'allocazione della memoria puntata da elem in BookShelf.
-  Così anche per i costruttori che non richiedono una data come parametro: la data viene costruita con il costruttore `Date()` di default e la assumiamo come ignota.
+  Così anche per i costruttori che non richiedono una data come parametro: la data viene costruita con il costruttore Date() di default e la assumiamo come ignota.
 
 Esempio d'utilizzo del codice
 
@@ -57,8 +57,8 @@ libreria.push_back(libro2);
 
 ```
 
-## Autori (in ordine alfabetico)
+Autori (in ordine alfabetico)
 
-- [Novkovic Elena](https://www.github.com/eenvk)
-- [Renzi Edoardo](https://www.github.com/EORNZ)
-- [Zago Giada](https://www.github.com/Jada03)
+- Novkovic Elena 
+- Renzi Edoardo
+- Zago Giada
