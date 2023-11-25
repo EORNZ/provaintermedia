@@ -71,6 +71,6 @@ int main() {
             shelf3[i].restituisci();
     }
     cout<<shelf3;
-    return 0;
 
+    return 0;
 }
