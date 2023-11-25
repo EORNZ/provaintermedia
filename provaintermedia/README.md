@@ -36,7 +36,7 @@ dove
 
 3. `CMakeLists.txt`: Gestisce i file nella compilazione del programma
 
-##Scelte progettuali
+## Scelte progettuali
 1. **`classe Date`**:
    Il costruttore di default inizializza le variabili membro a 0 e assumiamo che una data con tali valori sia IGNOTA.
 2. **`classe Book`**:
