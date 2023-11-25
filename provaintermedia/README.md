@@ -36,6 +36,8 @@ dove
 
 3. `CMakeLists.txt`: Gestisce i file nella compilazione del programma
 
+## Esempio d'utilizzo del codice
+
 ```cpp
 Date dataPubblicazione(1, 1, 2023);
 Book libro1("123456789", "Titolo Libro", "Nome Autore", "Cognome Autore", dataPubblicazione);
