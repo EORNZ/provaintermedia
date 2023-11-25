@@ -35,7 +35,6 @@ int main() {
 
     cout<<"\n*****************************************\n"<<endl;
 
-
     BookShelf shelf2 = BookShelf(2);
     shelf2.push_back(mybook1);
     shelf2.push_back(mybook2);
@@ -76,13 +75,10 @@ int main() {
     cout<<"\n----------------Creazione terza libreria: Shelf3, con differente inserimento----------------\n";
     cout<<shelf3;
 
-
     return 0;
 }
 
-
 //test main
-
 /*Date d1 = Date(10,12,2023);
 
     Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
