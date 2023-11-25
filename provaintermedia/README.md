@@ -30,7 +30,7 @@ dove
     
 2. **`src`**: Contiene i file sorgente.
     - `Book.cpp`: Contiene l'implementazione della classe `Book`.
-    - `BookShelf.h` e `BookShelf.cpp`: Contiene l'implementazione della classe `BookShelf`.
+    - `BookShelf.cpp`: Contiene l'implementazione della classe `BookShelf`.
     - `Date.cpp`: Contiene l'implementazione della classe `Date` .
     - `main.cpp`: Un file sorgente di esempio che illustra come utilizzare le classi nel tuo progetto.
 
