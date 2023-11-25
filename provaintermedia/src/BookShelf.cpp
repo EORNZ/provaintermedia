@@ -110,6 +110,14 @@ int BookShelf::getSize() const {
     return size;
 }
 
+bool BookShelf::isValid(int index) const{
+    return (index >= 0 && index < size);
+}
+
+bool BookShelf::isEmpty() const{
+    return size==0;
+}
+
 //toString
 std::string BookShelf::toString() const{
     std::string s = "[";
@@ -121,14 +129,6 @@ std::string BookShelf::toString() const{
     }
     s += "]";
     return s;
-}
-
-bool BookShelf::isValid(int index) const{
-    return (index >= 0 && index < size);
-}
-
-bool BookShelf::isEmpty() const{
-    return size==0;
 }
 
 //ostream

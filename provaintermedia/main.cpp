@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+
     Date d1 = Date(10,12,2023);
 
     Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
@@ -41,12 +42,89 @@ int main() {
     
     cout<<"---------Controllo se mybook4 e mybook2 sono uguali--------"<<endl;
 
-    if(mybook4==mybook2){
+    int a = 1; //devono rimanere all'interno della size della shelf
+    int b = 2;
+
+    if(shelf[a]==shelf[b]){
         cout<<"i due libri sono uguali";
     }
     else{
         cout<<"i due libri non sono uguali";
     }
 
+
     return 0;
 }
+
+
+//test main
+
+/*Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
+    mybook1.prendi();
+
+    Date d1 = Date(10,12,2023);
+
+    Book mybook2("Anna", "Premoli", "Facciamo finta che mi ami", "667-432-178-4",d1);
+
+    Book mybook3("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
+
+    Book mybook4("Alessia", "Gazzola", "Le ossa della principessa", "135-999-087-7");
+
+    //creo un bookshelf
+    BookShelf shelf = BookShelf(1);
+    shelf.push_back(Book("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",Date(10,9,2023)));
+    shelf.push_back(Book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", 6,8,1997));
+
+    cout<<"Stampo i libri contenuti in shelf \n"<<shelf<<endl;
+
+    cout<<"Modifico il libro 1\n";
+    shelf[0] = Book("Felicia", "Kingsley", "Matrimonio di convenienza", "222-222-222-1",Date(10,9,2017));
+
+    cout<<"Stampo i libri contenuti in shelf \n"<<shelf<<endl;
+
+    cout<<"Prendo in prestito il libro 2\n";
+    shelf[1].prendi();
+
+    cout<<"Stampo i libri contenuti in shelf \n"<<shelf<<endl;
+
+    cout<<"-----------"<<endl;
+
+
+    BookShelf shelf2;
+    shelf2.push_back(mybook1);
+    shelf2.push_back(mybook2);
+    shelf2.push_back(mybook3);
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+
+    cout<<"Modifico il libro 3\n";
+    shelf2[2] = mybook4;
+
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+
+    cout<<"Elimino l'ultimo elemento"<<endl;
+    shelf2.pop_back();
+
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+
+    cout<<"Modifico il libro 1\n";
+    shelf2[0] = shelf[0];
+
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+
+    mybook3.prendi();
+    mybook2.prendi();
+    cout<<mybook3<<endl;
+    cout<<shelf2<<endl;
+
+    //essendo che mybook2 e mybook3 sono oggetti a se stanti e quando vengono inseriti in bookshelf in realtà vengono solo copiati
+    //quando modifico li modifico non modifico l'oggetto uguale a loro in bookshelf
+
+
+    //cout<<shelf2[100]; //va out of bounds e il prgramma non ritorna 0
+
+
+    cout<<shelf[0]<<endl;
+    cout<<shelf2[0]<<endl;
+    if(shelf[0]==shelf2[0]){
+        cout<<"Le due librerie hanno 2 libri uguali\n";
+    } */
