@@ -68,19 +68,19 @@ include CMakeFiles/Progetto.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Progetto.dir/flags.make
 
-CMakeFiles/Progetto.dir/main.cpp.obj: CMakeFiles/Progetto.dir/flags.make
-CMakeFiles/Progetto.dir/main.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/main.cpp
-CMakeFiles/Progetto.dir/main.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Progetto.dir/main.cpp.obj"
-	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/main.cpp.obj -MF CMakeFiles\Progetto.dir\main.cpp.obj.d -o CMakeFiles\Progetto.dir\main.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp
+CMakeFiles/Progetto.dir/src/main.cpp.obj: CMakeFiles/Progetto.dir/flags.make
+CMakeFiles/Progetto.dir/src/main.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/main.cpp
+CMakeFiles/Progetto.dir/src/main.cpp.obj: CMakeFiles/Progetto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Progetto.dir/src/main.cpp.obj"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Progetto.dir/src/main.cpp.obj -MF CMakeFiles\Progetto.dir\src\main.cpp.obj.d -o CMakeFiles\Progetto.dir\src\main.cpp.obj -c C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\main.cpp
 
-CMakeFiles/Progetto.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/main.cpp.i"
-	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp > CMakeFiles\Progetto.dir\main.cpp.i
+CMakeFiles/Progetto.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Progetto.dir/src/main.cpp.i"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\main.cpp > CMakeFiles\Progetto.dir\src\main.cpp.i
 
-CMakeFiles/Progetto.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/main.cpp.s"
-	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\main.cpp -o CMakeFiles\Progetto.dir\main.cpp.s
+CMakeFiles/Progetto.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Progetto.dir/src/main.cpp.s"
+	C:\Users\edore\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\edore\Documents\uni\LabProgrammazione\provaintermedia\provaintermedia\src\main.cpp -o CMakeFiles\Progetto.dir\src\main.cpp.s
 
 CMakeFiles/Progetto.dir/src/Book.cpp.obj: CMakeFiles/Progetto.dir/flags.make
 CMakeFiles/Progetto.dir/src/Book.cpp.obj: C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Book.cpp
@@ -126,7 +126,7 @@ CMakeFiles/Progetto.dir/src/BookShelf.cpp.s: cmake_force
 
 # Object files for target Progetto
 Progetto_OBJECTS = \
-"CMakeFiles/Progetto.dir/main.cpp.obj" \
+"CMakeFiles/Progetto.dir/src/main.cpp.obj" \
 "CMakeFiles/Progetto.dir/src/Book.cpp.obj" \
 "CMakeFiles/Progetto.dir/src/Date.cpp.obj" \
 "CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj"
@@ -134,7 +134,7 @@ Progetto_OBJECTS = \
 # External object files for target Progetto
 Progetto_EXTERNAL_OBJECTS =
 
-Progetto.exe: CMakeFiles/Progetto.dir/main.cpp.obj
+Progetto.exe: CMakeFiles/Progetto.dir/src/main.cpp.obj
 Progetto.exe: CMakeFiles/Progetto.dir/src/Book.cpp.obj
 Progetto.exe: CMakeFiles/Progetto.dir/src/Date.cpp.obj
 Progetto.exe: CMakeFiles/Progetto.dir/src/BookShelf.cpp.obj
