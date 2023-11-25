@@ -16,7 +16,6 @@ Date::Date(int gg, int mm, int aaaa) {
             this->giorno = gg;
             this->mese = mm;
             this->anno = aaaa;
-            this->ignoto=false;
         }
     }
     else{
@@ -29,12 +28,11 @@ Date& Date::operator=(const Date& d){
     this->giorno = d.giorno;
     this->mese = d.mese;
     this->anno = d.anno;
-    this->ignoto = d.ignoto;
     return *this;
 }
 
 bool Date::operator==(const Date &d) const {
-    return (this->giorno == d.giorno && this->mese == d.mese && this->anno == d.anno && this->ignoto == d.ignoto);
+    return (this->giorno == d.giorno && this->mese == d.mese && this->anno == d.anno);
 }
 
 bool Date::operator!=(const Date &d) const {
@@ -69,16 +67,14 @@ int Date::getMese() const{
 int Date::getAnno() const{
     return anno;
 }
-bool Date::isIgnoto() const{
-    return ignoto;
-}
 
 //toString
 std::string Date::toString() const{
     std::string s;
     if(giorno==0 || mese==0 || anno==0){
         s= "Data ignota";
-    }else{
+    }
+    else{
         s = std::to_string(giorno) + "/" + std::to_string(mese) + "/" + std::to_string(anno);
     }
     return s;
