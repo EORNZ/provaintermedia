@@ -13,7 +13,7 @@ int main() {
 
     Book mybook2("Anna", "Premoli", "Facciamo finta che mi ami", "667-432-178-4",d1);
 
-    Book mybook3("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
+    Book mybook3("David", "Foster Wallace", "Una cosa divertente che non faro mai più", "887-521-837-4", Date(6,8,1997));
 
     Book mybook4("Alessia", "Gazzola", "Le ossa della principessa", "135-999-087-7");
 
