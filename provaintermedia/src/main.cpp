@@ -41,7 +41,6 @@ int main() {
         cout<<"i due libri non sono uguali";
     }
 
-
     cout<<"\n\n---------gioco con i bookshelf--------"<<endl;
 
     BookShelf shelf2;
@@ -53,6 +52,7 @@ int main() {
     BookShelf shelf55 = { mybook12 };
     cout<<shelf55;
 
+    /* ATTENZIONE METODI COMMENTATI IN BOOKSHELF
     cout<< "\n\ntest con nuovo metodo per prendere un libro dentro una libreria \n";
     BookShelf shelfedo(10);
     Book book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
@@ -75,7 +75,7 @@ int main() {
     cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     shelfedo.restituisci_libro(book);
     cout<<"shelf.restituisci_libro(book) stampo shelf \n"<<shelfedo<<"\n";
-
+*/
 
     return 0;
 }
