@@ -75,6 +75,7 @@ void BookShelf::restituisci_libro(const Book& b){
     }
     std::cout<<"[ "<< b <<" ] gia' restituito\n"; //da sistemare
 }
+
 Book& BookShelf::at(int i){
     if (!isValid(i)){
         throw OutOfBounds();
