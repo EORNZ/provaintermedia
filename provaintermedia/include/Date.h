@@ -1,5 +1,5 @@
-#ifndef DATA_DATE_H
-#define DATA_DATE_H
+#ifndef PROVAINTERMEDIA_DATE_H
+#define PROVAINTERMEDIA_DATE_H
 
 #include <iostream>
 
@@ -36,4 +36,4 @@ private:
 //ostream
 std::ostream &operator<<(std::ostream &os, const Date &);
 
-#endif //DATA_DATE_H
+#endif //PROVAINTERMEDIA_DATE_H

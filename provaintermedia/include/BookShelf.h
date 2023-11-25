@@ -1,5 +1,5 @@
-#ifndef PROGETTO_BOOKSHELF_H
-#define PROGETTO_BOOKSHELF_H
+#ifndef PROVAINTERMEDIA_BOOKSHELF_H
+#define PROVAINTERMEDIA_BOOKSHELF_H
 #include <iostream>
 #include <initializer_list>
 #include "Book.h"
@@ -50,4 +50,4 @@ private:
 
 //ostream
 std::ostream& operator<<(std::ostream&, const BookShelf&);
-#endif //PROGETTO_BOOKSHELF_H
+#endif //PROVAINTERMEDIA_BOOKSHELF_H

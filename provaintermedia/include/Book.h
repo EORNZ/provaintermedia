@@ -1,5 +1,5 @@
-#ifndef PROGETTO_BOOK_H
-#define PROGETTO_BOOK_H
+#ifndef PROVAINTERMEDIA_BOOK_H
+#define PROVAINTERMEDIA_BOOK_H
 #include <iostream>
 #include "Date.h"
 
@@ -45,4 +45,4 @@ private:
 
 //ostream
 std::ostream& operator<<(std::ostream&, const Book&);
-#endif //PROGETTO_BOOK_H
+#endif //PROVAINTERMEDIA_BOOK_H
