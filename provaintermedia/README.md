@@ -1,7 +1,7 @@
 
 # Prova Intermedia
 
-Il programma è progettato per gestire una libreria utilizzando tre classi principali: Date, Book e BookShelf. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato (che rappresenta la disponibilità del libro). Infine, la classe BookShelf implementa un std::vector utilizzando un array dinamicamente ridimensionabile nel caso in cui la variabile membro size raggiunga la dimensione della variabile membro buffer_size.
+Il programma è progettato per gestire una libreria utilizzando tre classi: Date, Book e BookShelf. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato (che rappresenta la disponibilità del libro). Infine, la classe BookShelf implementa un std::vector utilizzando un array dinamicamente ridimensionabile nel caso in cui la variabile membro size raggiunga la dimensione della variabile membro buffer_size.
 
 
 ## Struttura del codice
