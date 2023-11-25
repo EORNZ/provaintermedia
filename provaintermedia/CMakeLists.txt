@@ -7,6 +7,7 @@ add_executable(Progetto src/main.cpp
         src/Book.cpp
         include/Book.h
         src/Date.cpp
+        include/Date.h
         src/BookShelf.cpp
         include/BookShelf.h
-        include/Date.h)
+        src/main.cpp)
