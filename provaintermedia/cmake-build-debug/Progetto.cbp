@@ -93,9 +93,6 @@
 		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/include/Date.h">
 			<Option target="Progetto"/>
 		</Unit>
-		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/main.cpp">
-			<Option target="Progetto"/>
-		</Unit>
 		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Book.cpp">
 			<Option target="Progetto"/>
 		</Unit>
@@ -103,6 +100,9 @@
 			<Option target="Progetto"/>
 		</Unit>
 		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/Date.cpp">
+			<Option target="Progetto"/>
+		</Unit>
+		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/src/main.cpp">
 			<Option target="Progetto"/>
 		</Unit>
 		<Unit filename="C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/CMakeLists.txt">

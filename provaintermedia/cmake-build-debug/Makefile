@@ -128,30 +128,6 @@ Progetto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/build
 .PHONY : Progetto/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 src/Book.obj: src/Book.cpp.obj
 .PHONY : src/Book.obj
 
@@ -224,6 +200,30 @@ src/Date.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/Date.cpp.s
 .PHONY : src/Date.cpp.s
 
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Progetto.dir\build.make CMakeFiles/Progetto.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -233,9 +233,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Progetto
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 	@echo ... src/Book.obj
 	@echo ... src/Book.i
 	@echo ... src/Book.s
@@ -245,6 +242,9 @@ help:
 	@echo ... src/Date.obj
 	@echo ... src/Date.i
 	@echo ... src/Date.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
