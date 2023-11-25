@@ -55,7 +55,7 @@ int main() {
     /* ATTENZIONE METODI COMMENTATI IN BOOKSHELF
     cout<< "\n\ntest con nuovo metodo per prendere un libro dentro una libreria \n";
     BookShelf shelfedo(10);
-    Book book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
+    Book book("David", "Foster Wallace", "Una cosa divertente che non faro mai più", "887-521-837-4", Date(6,8,1997));
     Book book2("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",10,9,2023);
     shelfedo.push_back(book);
     shelfedo.push_back(book2);
