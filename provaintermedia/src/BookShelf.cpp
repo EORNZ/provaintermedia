@@ -4,7 +4,7 @@
 BookShelf::BookShelf() {
     buffer_size=0;
     size=0;
-    elem= nullptr;
+    elem=nullptr;
 }
 
 BookShelf::BookShelf(int dim){
@@ -55,72 +55,6 @@ BookShelf& BookShelf::operator=(const BookShelf& b){
     return *this;
 }
 
-//funzioni membro
-void BookShelf::prendi_libro(const Book& b){
-    for (int i = 0; i < size; i++) {
-        if(b==elem[i] && elem[i].getStato() /*se è presente && disponibile*/ ){
-            elem[i].prendi();
-            return;
-        }
-    }
-    std::cout<< "nessun [ "<< b <<" ] disponibile\n"; //da sistemare
-}
-
-void BookShelf::restituisci_libro(const Book& b){
-    for (int i = 0; i < size; i++) {
-        if(b==elem[i] && !elem[i].getStato() /*se "è presente" && in prestito*/ ){
-            elem[i].restituisci();
-            return;
-        }
-    }
-    std::cout<<"[ "<< b <<" ] gia' restituito\n"; //da sistemare
-}
-
-Book& BookShelf::at(int i){
-    if (!isValid(i)){
-        throw OutOfBounds();
-    }
-    return elem[i];
-}
-
-Book BookShelf::at(int i) const {
-    if (!isValid(i)) {
-        throw OutOfBounds();
-    }
-    return elem[i];
-}
-
-void BookShelf::push_back(const Book& e){
-    if (elem == nullptr){
-        buffer_size = 1;
-        elem = new Book[buffer_size];
-    }
-    else if (size == buffer_size){
-        reserve(buffer_size * 2);
-    }
-    elem[size] = e;
-    size++;
-}
-
-void BookShelf::reserve(int n){
-    if (n > buffer_size){
-        buffer_size = n;
-        Book *np = new Book[buffer_size];
-        std::copy(elem, elem + size, np);
-        delete[] elem;
-        elem = np;
-    }
-}
-
-Book BookShelf::pop_back(){
-    if (isEmpty()){
-        throw Empty();
-    }
-    Book e = elem[size-1];
-    size--;
-    return e;
-}
-
 //ausiliari
 int BookShelf::getBufferSize() const {
     return buffer_size;
@@ -136,6 +70,72 @@ bool BookShelf::isValid(int index) const{
 
 bool BookShelf::isEmpty() const{
     return size==0;
+}
+
+//altre
+/*void BookShelf::prendi_libro(const Book& b){
+    for (int i = 0; i < size; i++) {
+        if(b==elem[i] && elem[i].getStato()){
+            elem[i].prendi();
+            return;
+        }
+    }
+    std::cout<< "nessun [ "<< b <<" ] disponibile\n"; //da sistemare
+}
+
+void BookShelf::restituisci_libro(const Book& b){
+    for (int i = 0; i < size; i++) {
+        if(b==elem[i] && !elem[i].getStato()){
+            elem[i].restituisci();
+            return;
+        }
+    }
+    std::cout<<"[ "<< b <<" ] gia' restituito\n"; //da sistemare
+}*/
+
+Book& BookShelf::at(int i){
+    if (!isValid(i)){
+        throw OutOfBounds();
+    }
+    return elem[i];
+}
+
+Book BookShelf::at(int i) const {
+    if (!isValid(i)) {
+        throw OutOfBounds();
+    }
+    return elem[i];
+}
+
+void BookShelf::reserve(int n){
+    if (n > buffer_size){
+        buffer_size = n;
+        Book *np = new Book[buffer_size];
+        std::copy(elem, elem + size, np);
+        delete[] elem;
+        elem = np;
+    }
+}
+
+void BookShelf::push_back(const Book& e){
+    if (elem == nullptr){
+        buffer_size = 1;
+        elem = new Book[buffer_size];
+    }
+    else if (size == buffer_size){
+        reserve(buffer_size * 2);
+    }
+    elem[size] = e;
+    size++;
+}
+
+Book BookShelf::pop_back(){
+    if (isEmpty()){
+        throw Empty();
+    }
+    Book e = elem[size-1];
+    size--;
+    return e;
 }
 
 //toString
