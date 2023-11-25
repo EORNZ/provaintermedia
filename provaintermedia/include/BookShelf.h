@@ -22,19 +22,22 @@ public:
     Book operator[](int) const;
     Book& operator[](int);
     BookShelf& operator=(const BookShelf&);
-    //funzioni membro
-    void prendi_libro(const Book&);
-    void restituisci_libro(const Book&);
-    Book& at(int);
-    Book at(int) const;
-    void push_back(const Book&);
-    Book pop_back();
-    void reserve(int);
+    
+    //void prendi_libro(const Book&);
+    //void restituisci_libro(const Book&);
+
     //ausiliari
     int getBufferSize() const;
     int getSize() const;
     bool isValid(int index) const;
     bool isEmpty() const;
+
+    Book& at(int);
+    Book at(int) const;
+    void push_back(const Book&);
+    Book pop_back();
+    void reserve(int);
+    
     //tostring
     std::string toString() const;
 
@@ -42,8 +45,6 @@ private:
     Book *elem;
     int size;
     int buffer_size;
-
-
 };
 
 //ostream
