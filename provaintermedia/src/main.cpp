@@ -8,12 +8,9 @@ int main() {
 
     Book mybook1("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1");
     mybook1.prendi();
-
     Date d1 = Date(10,12,2023);
     Book mybook2("Anna", "Premoli", "Facciamo finta che mi ami", "667-432-178-4",d1);
-
     Book mybook3("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", Date(6,8,1997));
-
     Book mybook4("Alessia", "Gazzola", "Le ossa della principessa", "135-999-087-7");
 
     //creo un bookshelf
