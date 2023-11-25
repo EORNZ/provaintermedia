@@ -23,8 +23,8 @@ public:
     Book& operator[](int);
     BookShelf& operator=(const BookShelf&);
     //funzioni membro
-    void prendi_libro(Book&);
-    void restituisci_libro(Book &b);
+    void prendi_libro(const Book&);
+    void restituisci_libro(const Book&);
     Book& at(int);
     Book at(int) const;
     void push_back(const Book&);
