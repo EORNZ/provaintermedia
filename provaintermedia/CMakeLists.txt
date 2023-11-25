@@ -9,5 +9,4 @@ add_executable(Progetto src/main.cpp
         src/Date.cpp
         include/Date.h
         src/BookShelf.cpp
-        include/BookShelf.h
-        src/main.cpp)
+        include/BookShelf.h)
