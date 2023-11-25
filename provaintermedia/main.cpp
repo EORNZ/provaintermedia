@@ -69,8 +69,14 @@ int main() {
     cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     shelfedo.prendi_libro(book);
     cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
+    shelfedo.prendi_libro(book);
+    cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
+    shelfedo.prendi_libro(book);
+    cout<<"shelf.prendi_libro(book) stampo shelf \n"<<shelfedo<<"\n";
     shelfedo.restituisci_libro(book);
     cout<<"shelf.restituisci_libro(book) stampo shelf \n"<<shelfedo<<"\n";
+
+
     return 0;
 }
 

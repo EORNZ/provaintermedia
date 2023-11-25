@@ -63,6 +63,7 @@ void BookShelf::prendi_libro(Book &b){
             return;
         }
     }
+    std::cout<< "nessun [ "<< b <<" ] disponibile\n"; //da sistemare
 }
 
 void BookShelf::restituisci_libro(Book& b){
@@ -72,6 +73,7 @@ void BookShelf::restituisci_libro(Book& b){
             return;
         }
     }
+    std::cout<<"[ "<< b <<" ] gia' restituito\n"; //da sistemare
 }
 Book& BookShelf::at(int i){
     if (!isValid(i)){
