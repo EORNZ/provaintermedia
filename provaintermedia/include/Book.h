@@ -15,12 +15,11 @@ public:
     Book(std::string, std::string, std::string, std::string, Date);
     Book(std::string, std::string, std::string, std::string, int, int, int);
     Book(const Book&);
+
     //overloading operatori
     bool operator==(const Book&) const;
     bool operator!=(const Book&) const;
-    //funzioni membro
-    void prendi();
-    void restituisci();
+
     //ausiliari
     std::string getIsbn() const;
     std::string getTitolo() const;
@@ -28,6 +27,10 @@ public:
     std::string getCognome() const;
     Date getData() const;
     bool getStato() const;
+
+    void prendi();
+    void restituisci();
+
     //tostring
     std::string toString() const;
 
