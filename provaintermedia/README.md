@@ -52,7 +52,7 @@ Date dataPubblicazione(1, 1, 2023);
 Book libro1("123456789", "Titolo Libro", "Nome Autore", "Cognome Autore", dataPubblicazione);
 Book libro2("987654321", "Altro Titolo", "Altro Nome", "Altro Cognome", 2, 2, 2022);
 
-BookShelf libreria;
+BookShelf libreria(1);
 libreria.push_back(libro1);
 libreria.push_back(libro2);
 
