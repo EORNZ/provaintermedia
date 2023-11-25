@@ -31,7 +31,7 @@ Book::Book(std::string nome, std::string cognome, std::string titolo, std::strin
     this->titolo = titolo;
     this->isbn = isbn;
     this->data = data;
-    this->stato = true;
+    this->stato = true; //è disponibile
 }
 
 Book::Book(std::string nome, std::string cognome, std::string titolo, std::string isbn, int gg, int mm, int aaaa) {
@@ -43,9 +43,10 @@ Book::Book(std::string nome, std::string cognome, std::string titolo, std::strin
     this->titolo = titolo;
     this->isbn = isbn;
     this->data = Date(gg,mm,aaaa);
-    this->stato = true;
+    this->stato = true; //è disponibile
 }
 
+//costruttore di copia
 Book::Book(const Book& b){
     this->nome = b.nome;
     this->cognome = b.cognome;
@@ -65,20 +66,6 @@ bool Book::operator==(const Book &b) const {
 
 bool Book::operator!=(const Book &b) const {
     return !operator==(b);
-}
-
-//funzioni membro
-void Book::prendi(){
-    if(stato == false){
-        throw InPrestito();
-    }
-    stato = false;
-}
-
-void Book::restituisci(){
-    if(!stato){
-        stato = true;
-    }
 }
 
 //ausiliari
@@ -106,6 +93,20 @@ bool Book::getStato() const{
     return stato;
 }
 
+//altre funzioni
+void Book::prendi(){
+    if(!stato){
+        throw InPrestito();
+    }
+    stato = false;
+}
+
+void Book::restituisci(){
+    if(!stato){
+        stato = true;
+    }
+}
+
 //toString
 std::string Book::toString() const {
     std::string s;
@@ -129,8 +130,3 @@ std::ostream& operator<<(std::ostream& os, const Book& b) {
     }
     return os << b.getNome() << ", " << b.getCognome() << ", " << b.getTitolo() << ", " << b.getIsbn() << ", " << b.getData() << ", " << s;
 }
-
-
-
-
-
