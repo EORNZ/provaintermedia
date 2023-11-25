@@ -21,17 +21,15 @@ int main() {
     shelf.push_back(Book("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",Date(10,9,2023)));
     shelf.push_back(Book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", 6,8,1997));
 
-    cout<<"----------------Stampo i libri contenuti in shelf ----------------\n"<<shelf<<endl;
+    cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<endl<<endl;
 
-    cout<<"Modifico il libro 1\n";
+    cout<<"Modifico il libro 1 cambiandone la data\n";
     shelf[0] = Book("Felicia", "Kingsley", "Matrimonio di convenienza", "222-222-222-1",Date(10,9,2017));
-
-    cout<<"----------------Stampo i libri contenuti in shelf ----------------\n"<<shelf<<endl;
+    cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<endl<<endl;
 
     cout<<"Prendo in prestito il libro 2\n";
     shelf[1].prendi();
-
-    cout<<"----------------Stampo i libri contenuti in shelf ----------------\n"<<shelf<<endl;
+    cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<endl;
 
     cout<<"\n*****************************************\n"<<endl;
 
@@ -39,26 +37,22 @@ int main() {
     shelf2.push_back(mybook1);
     shelf2.push_back(mybook2);
     shelf2.push_back(mybook3);
-    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n\n";
 
     cout<<"Modifico il libro 3\n";
     shelf2[2] = mybook4;
-
-    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n\n";
 
     cout<<"Elimino l'ultimo elemento"<<endl;
     shelf2.pop_back();
-
-    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n";
+    cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n\n";
 
     cout<<"Modifico il libro 1\n";
     shelf2[0] = shelf[0];
-
-    cout<<"----------------Stampo i libri contenuti in shelf2 ----------------\n"<<shelf2<<"\n";
-    cout<<"----------------Stampo i libri contenuti in shelf ----------------\n"<<shelf<<"\n";
+    cout<<"Stampo i libri contenuti in shelf2\n"<<shelf2<<"\n";
+    cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<"\n";
 
     cout<<"\n----------------Confronto due libri nella shelf----------------\n";
-
     cout<<"libro selezionato: '"<<shelf[0].getTitolo()<<"' "<<endl;
     cout<<"libro selezionato: '"<<shelf[1].getTitolo()<<"' "<<endl;
 
@@ -69,7 +63,6 @@ int main() {
     }
 
     Book mybook5("Collen", "Hoover", "Ugly Love", "888-345-899-9");
-
     BookShelf shelf3{mybook1, mybook2, mybook5};
     shelf3[2].prendi(); //mybook5 da disponibile diventa in prestito
     cout<<"\n----------------Creazione terza libreria: Shelf3, con differente inserimento----------------\n";
