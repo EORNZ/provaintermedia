@@ -1,7 +1,7 @@
 
 # Prova Intermedia
 
-Il programma è progettato per gestire una libreria di libri utilizzando tre classi principali: Date, Book, e BookShelf. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato(che rappresenta la disponibilità del libro). Infine, la classe BookShelf rappresenta la libreria sotto forma di vettore, contenente un array di Book (elem), la dimensione attuale (size) e la dimensione massima possibile (buffer_size).
+Il programma è progettato per gestire una libreria utilizzando tre classi principali: Date, Book, e BookShelf. La classe Date è stata creata per rappresentare una data con le varibili membro giorno, mese e anno. La classe Book contiene informazioni su un libro, con variabili membro isbn, titolo, nome, cognome, data e stato(che rappresenta la disponibilità del libro). Infine, la classe BookShelf rappresenta la libreria sotto forma di vettore, contenente un array di Book (elem), la dimensione attuale (size) e la dimensione massima possibile (buffer_size).
 
 
 ## Struttura del codice
