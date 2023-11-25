@@ -17,7 +17,6 @@ int main() {
     BookShelf shelf = BookShelf(1);
     shelf.push_back(Book("Felicia", "Kingsley", "Una ragazza d'altri tempi", "341-127-009-1",Date(10,9,2023)));
     shelf.push_back(Book("David", "Foster Wallace", "Una cosa divertente che non faro mai piu", "887-521-837-4", 6,8,1997));
-
     cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<endl<<endl;
 
     cout<<"Modifico il libro 1 cambiandone la data\n";
