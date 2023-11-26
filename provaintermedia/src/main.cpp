@@ -28,13 +28,18 @@ int main() {
         shelf[1].prendi();
         cout<<"Stampo i libri contenuti in shelf\n"<<shelf<<endl;
 
-        cout<<"\n*****************************************\n"<<endl;
-
         BookShelf shelf2 = BookShelf(2);
         shelf2.push_back(mybook1);
         shelf2.push_back(mybook2);
         shelf2.push_back(mybook3);
-        cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n\n";
+        cout<<"\nStampo i libri contenuti in shelf2\n"<<shelf2<<"\n";
+
+        cout<<"\nPrendo in prestito i libri di data inferiore a 1/1/2023\n";
+        for (int i = 0; i < shelf2.getSize(); ++i) {
+            if( shelf2[i].getData() < Date(1,1,2023) )
+                shelf2[i].prendi();
+        }
+        cout<<shelf2<<"\n\n";
 
         cout<<"Modifico il libro 3\n";
         shelf2[2] = mybook4;
@@ -73,18 +78,18 @@ int main() {
         }
         cout<<shelf3;
 
-    } catch( InvalidDate() ) {
+    } catch( InvalidDate ) {
         cout<<"Data inserita invalida\n";
-    } catch ( InvalidBook() ) {
-        cout<<"L'ISBN inserito non è valido\n";
-    } catch ( InPrestito() ) {
-        cout<<"Il libro che hai selezionato è già stato dato in prestito\n";
-    } catch ( Invalid() ) {
+    } catch ( InvalidBook ) {
+        cout<<"L'ISBN inserito non e' valido\n";
+    } catch ( InPrestito ) {
+        cout<<"Il libro che hai selezionato e' gia' stato dato in prestito\n";
+    } catch ( Invalid ) {
         cout<<"Librerie con dimensione negativa non esistono\n";
-    } catch ( OutOfBounds() ) {
-        cout<<"L'indice inserito è fuori dai limiti\n";
-    } catch ( Empty() ) {
-        cout<<"Questa libreria è già vuota\n";
+    } catch ( OutOfBounds ) {
+        cout<<"L'indice inserito e' fuori dai limiti\n";
+    } catch ( Empty ) {
+        cout<<"Questa libreria e' gia' vuota\n";
     }
 
 

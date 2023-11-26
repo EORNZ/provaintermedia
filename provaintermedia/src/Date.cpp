@@ -40,6 +40,9 @@ bool Date::operator!=(const Date &d) const {
 }
 
 bool Date::operator<(const Date &d) const {
+    if(giorno==0 || mese==0 || anno==0)
+        return false;
+
     if (this->anno < d.anno)
         return true;
     else if (this->anno > d.anno)
