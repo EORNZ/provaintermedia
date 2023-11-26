@@ -41,6 +41,13 @@ int main() {
         }
         cout<<shelf2<<"\n\n";
 
+        cout<<"\nPrendo in prestito i libri di data superiore a 1/1/2023\n";
+        for (int i = 0; i < shelf2.getSize(); ++i) {
+            if( shelf2[i].getData() > Date(1,1,2023) )
+                shelf2[i].prendi();
+        }
+        cout<<shelf2<<"\n\n";
+
         cout<<"Modifico il libro 3\n";
         shelf2[2] = mybook4;
         cout<<"Stampo i libri contenuti in shelf2 \n"<<shelf2<<"\n\n";
