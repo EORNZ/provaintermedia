@@ -80,7 +80,7 @@ int main() {
     } catch ( InPrestito() ) {
         cout<<"Il libro che hai selezionato è già stato dato in prestito\n";
     } catch ( Invalid() ) {
-        cout<<"Librerie con dimensione negativa o non esistono\n";
+        cout<<"Librerie con dimensione negativa non esistono\n";
     } catch ( OutOfBounds() ) {
         cout<<"L'indice inserito è fuori dai limiti\n";
     } catch ( Empty() ) {
