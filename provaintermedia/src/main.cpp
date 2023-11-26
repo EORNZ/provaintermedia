@@ -46,7 +46,7 @@ int main() {
             if( shelf2[i].getData() > Date(1,1,2023) )
                 shelf2[i].prendi();
         }
-        cout<<shelf2<<"\n\n";
+        cout<<shelf2<<"\n";
 
         cout<<"Modifico il libro 3\n";
         shelf2[2] = mybook4;
