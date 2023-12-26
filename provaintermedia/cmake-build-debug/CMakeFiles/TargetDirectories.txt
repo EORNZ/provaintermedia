@@ -1,3 +1,0 @@
-C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/cmake-build-debug/CMakeFiles/Progetto.dir
-C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/edore/Documents/uni/LabProgrammazione/provaintermedia/provaintermedia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
